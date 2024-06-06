@@ -1,0 +1,23 @@
+- description: "Omnicomplete #1"
+  vars:
+    input_value: Anna
+    previous_completions: file://knowledge_bases/previous_completions.json
+    domain_knowledge: file://knowledge_bases/domain_knowledge.csv
+- description: "Omnicomplete #2 (hit count)"
+  vars:
+    input_value: James
+    previous_completions: file://knowledge_bases/previous_completions.json
+    domain_knowledge: file://knowledge_bases/domain_knowledge.csv
+- description: "Omnicomplete #3 (domain knowledge)"
+  vars:
+    input_value: Emily
+    previous_completions: file://knowledge_bases/previous_completions.json
+    domain_knowledge: file://knowledge_bases/domain_knowledge.csv
+- description: "Omnicomplete #4 (domain knowledge)"
+  vars:
+    input_value: Mary
+    previous_completions: file://knowledge_bases/previous_completions.json
+    domain_knowledge: file://knowledge_bases/domain_knowledge.csv
+
+
+# ----
