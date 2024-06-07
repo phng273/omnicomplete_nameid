@@ -1,8 +1,16 @@
 # Instruction
 link: https://github.com/disler/omni-complete
+
 ## env
 Open a terminal and navigate to the env directory
-'llm\Scripts\activate'
+'venv_phuong\Scripts\activate'
+'pip install -r requirements.txt'
+
+
+## API Keys
+Truy cập "https://console.groq.com/keys"
+Create API Key
+fill API Keu in "server\module\llm.py"
 
 ## Frontend (Vue.js)
 Install dependencies
