@@ -10,7 +10,7 @@ Open a terminal and navigate to the env directory
 ## API Keys
 Truy cập "https://console.groq.com/keys"
 Create API Key
-fill API Keu in "server\module\llm.py"
+fill API Key in "server\module\llm.py"
 
 ## Frontend (Vue.js)
 Install dependencies

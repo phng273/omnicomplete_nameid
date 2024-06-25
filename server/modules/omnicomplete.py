@@ -1,70 +1,69 @@
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Tải các biến môi trường từ tệp .env
 
 PROMPT_ROOT_DIR = os.getenv("PROMPT_ROOT_DIR")
+if not PROMPT_ROOT_DIR:
+    raise ValueError("Environment variable PROMPT_ROOT_DIR is not set.")
 
 
 def build_omni_complete_prompt(input_value):
+    try:
+        with open(os.path.join(PROMPT_ROOT_DIR, "prompt.txt"), "r") as prompt_file:
+            prompt = prompt_file.read()
 
-    prompt = open(f"{PROMPT_ROOT_DIR}/prompt.txt", "r").read()
+        with open(os.path.join(PROMPT_ROOT_DIR, "knowledge_bases/previous_completions.json"), "r") as pc_file:
+            previous_completions = pc_file.read()
 
-    previous_completions = open(
-        f"{PROMPT_ROOT_DIR}/knowledge_bases/previous_completions.json", "r"
-    ).read()
+        with open(os.path.join(PROMPT_ROOT_DIR, "knowledge_bases/domain_knowledge.csv"), "r") as dk_file:
+            domain_knowledge = dk_file.read()
 
-    domain_knowledge = open(
-        f"{PROMPT_ROOT_DIR}/knowledge_bases/domain_knowledge.csv", "r"
-    ).read()
+        prompt = prompt.replace("{{previous_completions}}", previous_completions)
+        prompt = prompt.replace("{{domain_knowledge}}", domain_knowledge)
+        prompt = prompt.replace("{{input_value}}", input_value)
 
-    prompt = prompt.replace("{{previous_completions}}", previous_completions)
-    prompt = prompt.replace("{{domain_knowledge}}", domain_knowledge)
-    prompt = prompt.replace("{{input_value}}", input_value)
-    return prompt
+        return prompt
+
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+        raise
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        raise
 
 
-def increment_or_create_previous_completions(input, completion):
+def increment_or_create_previous_completions(input_value, completion):
+    previous_completions_file = os.path.join(PROMPT_ROOT_DIR, "knowledge_bases/previous_completions.json")
 
-    previous_completions_file = (
-        f"{PROMPT_ROOT_DIR}/knowledge_bases/previous_completions.json"
-    )
+    try:
+        with open(previous_completions_file, "r") as pc_file:
+            previous_completions = json.load(pc_file)
 
-    """
-    [
-        {
-            "input": "Anna",
-            "completions": [
-                "Anna Benson ID:998",
-                "Anna Higgins ID:355",
-                "Anna Mills ID:381"
-            ],
-            "hits": 3
-        },
-    ...
-    ]
-    """
-    previous_completions = open(previous_completions_file, "r").read()
+        matching_icase = [
+            item for item in previous_completions
+            if item["input"].lower() == input_value.lower()
+            and any(completion.lower() in comp.lower() for comp in item["completions"])
+        ]
 
-    previous_completions = json.loads(previous_completions)
-    matching_icase = [
-        item
-        for item in previous_completions
-        if item["input"].lower() == input.lower()
-        and any(
-            completion.lower() in completion.lower()
-            for completion in item["completions"]
-        )
-    ]
+        if matching_icase:
+            matching_icase[0]["hits"] += 1
+        else:
+            new_completion = {"input": input_value, "completions": [completion], "hits": 1}
+            previous_completions.append(new_completion)
 
-    if matching_icase:
-        matching_icase[0]["hits"] += 1
-    else:
-        new_completion = {"input": input, "completions": [completion], "hits": 1}
-        previous_completions.append(new_completion)
+        completions_sorted_by_hits = sorted(previous_completions, key=lambda x: x["hits"], reverse=True)
 
-    completions_sorted_by_hits = sorted(
-        previous_completions, key=lambda x: x["hits"], reverse=True
-    )
+        with open(previous_completions_file, "w") as pc_file:
+            json.dump(completions_sorted_by_hits, pc_file, indent=4)
 
-    # write back to file
-    with open(previous_completions_file, "w") as f:
-        json.dump(completions_sorted_by_hits, f, indent=4)
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+        raise
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+        raise
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        raise

@@ -1,13 +1,14 @@
 import os
 from dotenv import load_dotenv
+from groq import Groq
 
 load_dotenv()
-from groq import Groq
+
 
 
 client = Groq(
     # This is the default and can be omitted
-    api_key=os.environ.get("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"),
+    api_key=os.environ.get('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'),
     max_retries=2,
 )
 
