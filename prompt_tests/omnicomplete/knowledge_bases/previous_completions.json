@@ -1,340 +1,202 @@
 [
     {
-        "input": " Angela ",
-        "completions": [
-            "Spears 16",
-            "Jones 108",
-            "Scott 161",
-            "Gould 357",
-            "Odonnell 364",
-            "Hunter 383",
-            "May 805",
-            "Wilson 811"
-        ],
+        "input": "Angela Spears ",
+        "completions": "16",
         "hits": 6
     },
     {
         "input": "Katherine Lara ",
-        "completions": [
-            "Katherine Lara 651"
-        ],
+        "completions": "651",
         "hits": 3
     },
     {
-        "input": " Keith ",
-        "completions": [
-            "Stephenson 947",
-            "Whitaker 85",
-            "Chapman 471",
-            "Mr. Keith Whitney 752"
-        ],
+        "input": "Keith Stephenson ",
+        "completions": "947",
         "hits": 3
     },
     {
-        "input": " Anna ",
-        "completions": [
-            "Benson 998",
-            "Higgins 355",
-            "Mills 381"
-        ],
+        "input": "Anna Benson ",
+        "completions": "998",
         "hits": 3
     },
     {
-        "input": " 1 ",
-        "completions": [
-            "Mark Nolan"
-        ],
+        "input": "Mark Nolan",
+        "completions": "1",
         "hits": 2
     },
     {
-        "input": " 54 ",
-        "completions": [
-            "Ryan Bowers"
-        ],
+        "input": "54 ",
+        "completions": "Ryan Bowers",
         "hits": 1
     },
     {
-        "input": " 2 ",
-        "completions": [
-            "Jonathan Butler"
-        ],
-        "hits": 1
-    },
-    {
-        "input": "Philip  ",
-        "completions": [
-            "Philip Stephens 31"
-        ],
+        "input": "2 ",
+        "completions": "Jonathan Butler",
         "hits": 1
     },
     {
         "input": "Philip Stephens ",
-        "completions": [
-            "Philip Stephens 31"
-        ],
+        "completions": "31",
         "hits": 1
     },
     {
         "input": "Gerald Dodson ",
-        "completions": [
-            "Gerald Dodson 20"
-        ],
+        "completions": "20",
         "hits": 1
     },
     {
-        "input": " 7 ",
-        "completions": [
-            "Wesley Arnold 7"
-        ],
+        "input": "7 ",
+        "completions": "Wesley Arnold",
         "hits": 1
     },
     {
-        "input": "donal lynch ",
-        "completions": [
-            "Donald Lynch 19"
-        ],
+        "input": "Donal Lynch ",
+        "completions": "19",
         "hits": 1
     },
     {
-        "input": " Lisa ",
-        "completions": [
-            "Gonzales 162",
-            "Heath 234",
-            "Davis 664",
-            "Anderson 700",
-            "Martinez MD 778",
-            "Berry 905",
-            "Cole 972"
-        ],
+        "input": "Lisa Gonzales ",
+        "completions": "162",
         "hits": 1
     },
     {
-        "input": " Anna ",
-        "completions": [
-            "Anna Benson 998"
-        ],
+        "input": "Lisa Gonzales ",
+        "completions": "162",
         "hits": 1
     },
     {
-        "input": " Lisa ",
-        "completions": [
-            "Lisa Gonzales 162"
-        ],
+        "input": "Andrew Holmes ",
+        "completions": "50",
         "hits": 1
     },
     {
-        "input": " Stepen ",
-        "completions": [
-            "Stephenson 947"
-        ],
+        "input": "12 ",
+        "completions": "Julie Lopez",
         "hits": 1
     },
     {
-        "input": "Philip Stephens",
-        "completions": [
-            "31"
-        ],
+        "input": "James Erickson ",
+        "completions": "6",
+        "hits": 1
+    },
+    {
+        "input": "Steven Becker ",
+        "completions": "30",
         "hits": 0
     },
     {
-        "input": "Steven Becker",
-        "completions": [
-            "30"
-        ],
+        "input": "3 ",
+        "completions": "Larry Hunt",
         "hits": 0
     },
     {
-        "input": "Donald Lynch",
-        "completions": [
-            "19"
-        ],
+        "input": "8 ",
+        "completions": "Paul Martinez",
         "hits": 0
     },
     {
-        "input": "Gerald Dodson",
-        "completions": [
-            "20"
-        ],
+        "input": "Kyle Williams ",
+        "completions": "11",
         "hits": 0
     },
     {
-        "input": " 3 ",
-        "completions": [
-            "Larry Hunt"
-        ],
+        "input": "12 ",
+        "completions": "Julie Lopez",
         "hits": 0
     },
     {
-        "input": " 7 ",
-        "completions": [
-            "Wesley Arnold"
-        ],
+        "input": "13 ",
+        "completions": "Carolyn Santana",
         "hits": 0
     },
     {
-        "input": " 8 ",
-        "completions": [
-            "Paul Martinez"
-        ],
+        "input": "14 ",
+        "completions": "Felicia Ballard",
         "hits": 0
     },
     {
-        "input": " Kyle ",
-        "completions": [
-            "Williams 11",
-            "Mason 966"
-        ],
+        "input": "15 ",
+        "completions": "Emily Cox",
         "hits": 0
     },
     {
-        "input": " 12 ",
-        "completions": [
-            "Julie Lopez"
-        ],
+        "input": "23 ",
+        "completions": "Andrew Greene",
         "hits": 0
     },
     {
-        "input": " 13 ",
-        "completions": [
-            "Carolyn Santana"
-        ],
+        "input": "24 ",
+        "completions": "Carmen Ruiz",
         "hits": 0
     },
     {
-        "input": " 14 ",
-        "completions": [
-            "Felicia Ballard"
-        ],
+        "input": "25 ",
+        "completions": "Danielle Bray",
         "hits": 0
     },
     {
-        "input": " 15 ",
-        "completions": [
-            "Emily Cox"
-        ],
+        "input": "26 ",
+        "completions": "Stephanie Shea",
         "hits": 0
     },
     {
-        "input": " 23 ",
-        "completions": [
-            "Andrew Greene"
-        ],
+        "input": "27 ",
+        "completions": "Michael Mcdonald",
         "hits": 0
     },
     {
-        "input": " 24 ",
-        "completions": [
-            "Carmen Ruiz"
-        ],
+        "input": "28 ",
+        "completions": "Michael Finley",
         "hits": 0
     },
     {
-        "input": " 25 ",
-        "completions": [
-            "Danielle Bray"
-        ],
+        "input": "29 ",
+        "completions": "Michael Lee",
         "hits": 0
     },
     {
-        "input": " 26 ",
-        "completions": [
-            "Stephanie Shea"
-        ],
+        "input": "31 ",
+        "completions": "Philip Stephens",
         "hits": 0
     },
     {
-        "input": " 27 ",
-        "completions": [
-            "Michael Mcdonald"
-        ],
+        "input": "James Lewis ",
+        "completions": "42",
         "hits": 0
     },
     {
-        "input": " 28 ",
-        "completions": [
-            "Michael Finley"
-        ],
+        "input": "Morgan Smith ",
+        "completions": "41",
         "hits": 0
     },
     {
-        "input": " 29 ",
-        "completions": [
-            "Michael Lee"
-        ],
+        "input": "Terry Bennett MD ",
+        "completions": "40",
         "hits": 0
     },
     {
-        "input": " 31 ",
-        "completions": [
-            "Philip Stephens"
-        ],
+        "input": "Ryan Montgomery ",
+        "completions": "39",
         "hits": 0
     },
     {
-        "input": "James Lewis",
-        "completions": [
-            "42"
-        ],
+        "input": "Jeffrey Mills ",
+        "completions": "22",
         "hits": 0
     },
     {
-        "input": " Morgan Smith ",
-        "completions": [
-            "41"
-        ],
+        "input": "Molly Murphy ",
+        "completions": "795",
         "hits": 0
     },
     {
-        "input": "Terry Bennett MD",
-        "completions": [
-            "40"
-        ],
+        "input": "Larry Hunt ",
+        "completions": "3",
         "hits": 0
     },
     {
-        "input": "Ryan Montgomery",
-        "completions": [
-            "39"
-        ],
-        "hits": 0
-    },
-    {
-        "input": "Jeffrey Mills",
-        "completions": [
-            "22"
-        ],
-        "hits": 0
-    },
-    {
-        "input": " Molly ",
-        "completions": [
-            "Murphy 795",
-            "Fisher 832",
-            "Greer 961"
-        ],
-        "hits": 0
-    },
-    {
-        "input": " Larry ",
-        "completions": [
-            "Hunt 3",
-            "Perez 555"
-        ],
-        "hits": 0
-    },
-    {
-        "input": " Donald ",
-        "completions": [
-            "Lynch 19",
-            "Calderon 87"
-        ],
-        "hits": 0
-    },
-    {
-        "input": " 16 ",
-        "completions": [
-            "Angela Spears"
-        ],
+        "input": "16 ",
+        "completions": "Angela Spears",
         "hits": 0
     }
 ]

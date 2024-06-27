@@ -50,7 +50,9 @@ def increment_or_create_previous_completions(input_value, completion):
         if matching_icase:
             matching_icase[0]["hits"] += 1
         else:
-            new_completion = {"input": input_value, "completions": [completion], "hits": 1}
+            new_completion = {
+                "input": input_value, "completions": completion, "hits": 1
+                }
             previous_completions.append(new_completion)
 
         completions_sorted_by_hits = sorted(previous_completions, key=lambda x: x["hits"], reverse=True)

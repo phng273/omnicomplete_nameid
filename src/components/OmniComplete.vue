@@ -90,7 +90,8 @@ const keyPressedDebounce = useDebounceFn(function (_event: KeyboardEvent) {
     didAutocomplete.value = false;
     return;
   }
-  if (inputValue.value.split(" ").length < 3) {
+  if (inputValue.value[inputValue.value.length - 1] !== ' ') {
+    // alert(1)
     return;
   }
   emit("get-autocomplete", inputValue.value);
