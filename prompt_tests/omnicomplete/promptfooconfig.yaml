@@ -2,7 +2,7 @@ description: "OmniComplete"
 providers: 
   - id: openai:chat:llama3-70b-8192
     config:
-      temperature: 0.1
+      temperature: 0.2
       apiBaseUrl: https://api.groq.com/openai/v1
       apiKeyEnvar: GROQ_API_KEY
       response_format: 
@@ -25,5 +25,5 @@ defaultTest:
           rank:
             type: array
 
-prompts: file://knowledge_bases/domain_knowledge.csv
+prompts: file://knowledge_bases/domain_knowledge.json
 tests: test*.yaml

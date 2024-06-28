@@ -40,25 +40,25 @@ def increment_or_create_previous_completions(input_value, completion):
     try:
         with open(previous_completions_file, "r") as pc_file:
             previous_completions = json.load(pc_file)
+        if input_value is int or completion is int:
+            matching_icase = [
+                item for item in previous_completions
+                if item["input"].lower() == input_value.lower()
+                and completion == item["completions"]
+            ]
 
-        matching_icase = [
-            item for item in previous_completions
-            if item["input"].lower() == input_value.lower()
-            and any(completion.lower() in comp.lower() for comp in item["completions"])
-        ]
+            if matching_icase:
+                matching_icase[0]["hits"] += 1
+            else:
+                new_completion = {
+                    "input": input_value, "completions": completion, "hits": 1
+                    }
+                previous_completions.append(new_completion)
 
-        if matching_icase:
-            matching_icase[0]["hits"] += 1
-        else:
-            new_completion = {
-                "input": input_value, "completions": completion, "hits": 1
-                }
-            previous_completions.append(new_completion)
+            completions_sorted_by_hits = sorted(previous_completions, key=lambda x: x["hits"], reverse=True)
 
-        completions_sorted_by_hits = sorted(previous_completions, key=lambda x: x["hits"], reverse=True)
-
-        with open(previous_completions_file, "w") as pc_file:
-            json.dump(completions_sorted_by_hits, pc_file, indent=4)
+            with open(previous_completions_file, "w") as pc_file:
+                json.dump(completions_sorted_by_hits, pc_file, indent=4)
 
     except FileNotFoundError as e:
         print(f"Error: {e}")

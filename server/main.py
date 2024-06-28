@@ -21,6 +21,8 @@ def get_autocomplete():
     print("prompt", prompt)
 
     response = llm.prompt_json(prompt)
+    if input_data in response:
+        response = response.replace(input_data, "")
 
     print("Response: ", response)
 
@@ -32,6 +34,7 @@ def do_autocomplete():
     autocomplete_object = request.json
     input_data = autocomplete_object["input"]
     completion = autocomplete_object["completion"]
+
     print(f"Received autocomplete object: input={input_data}, completion={completion}")
 
     omnicomplete.increment_or_create_previous_completions(

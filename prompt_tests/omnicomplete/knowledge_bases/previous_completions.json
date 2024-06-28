@@ -25,6 +25,16 @@
         "hits": 2
     },
     {
+        "input": "Keith Whitaker ",
+        "completions": "85",
+        "hits": 2
+    },
+    {
+        "input": "12 ",
+        "completions": "Julie Lopez",
+        "hits": 2
+    },
+    {
         "input": "54 ",
         "completions": "Ryan Bowers",
         "hits": 1
@@ -70,133 +80,28 @@
         "hits": 1
     },
     {
-        "input": "12 ",
-        "completions": "Julie Lopez",
-        "hits": 1
-    },
-    {
         "input": "James Erickson ",
         "completions": "6",
         "hits": 1
     },
     {
-        "input": "Steven Becker ",
-        "completions": "30",
-        "hits": 0
+        "input": "Mark Nolan ",
+        "completions": "1",
+        "hits": 1
     },
     {
-        "input": "3 ",
-        "completions": "Larry Hunt",
-        "hits": 0
+        "input": "789 ",
+        "completions": "Joshua Schmitt",
+        "hits": 1
     },
     {
-        "input": "8 ",
-        "completions": "Paul Martinez",
-        "hits": 0
+        "input": "786  ",
+        "completions": "William Schmidt",
+        "hits": 1
     },
     {
-        "input": "Kyle Williams ",
-        "completions": "11",
-        "hits": 0
-    },
-    {
-        "input": "12 ",
-        "completions": "Julie Lopez",
-        "hits": 0
-    },
-    {
-        "input": "13 ",
-        "completions": "Carolyn Santana",
-        "hits": 0
-    },
-    {
-        "input": "14 ",
-        "completions": "Felicia Ballard",
-        "hits": 0
-    },
-    {
-        "input": "15 ",
-        "completions": "Emily Cox",
-        "hits": 0
-    },
-    {
-        "input": "23 ",
-        "completions": "Andrew Greene",
-        "hits": 0
-    },
-    {
-        "input": "24 ",
-        "completions": "Carmen Ruiz",
-        "hits": 0
-    },
-    {
-        "input": "25 ",
-        "completions": "Danielle Bray",
-        "hits": 0
-    },
-    {
-        "input": "26 ",
-        "completions": "Stephanie Shea",
-        "hits": 0
-    },
-    {
-        "input": "27 ",
-        "completions": "Michael Mcdonald",
-        "hits": 0
-    },
-    {
-        "input": "28 ",
-        "completions": "Michael Finley",
-        "hits": 0
-    },
-    {
-        "input": "29 ",
-        "completions": "Michael Lee",
-        "hits": 0
-    },
-    {
-        "input": "31 ",
-        "completions": "Philip Stephens",
-        "hits": 0
-    },
-    {
-        "input": "James Lewis ",
-        "completions": "42",
-        "hits": 0
-    },
-    {
-        "input": "Morgan Smith ",
-        "completions": "41",
-        "hits": 0
-    },
-    {
-        "input": "Terry Bennett MD ",
-        "completions": "40",
-        "hits": 0
-    },
-    {
-        "input": "Ryan Montgomery ",
-        "completions": "39",
-        "hits": 0
-    },
-    {
-        "input": "Jeffrey Mills ",
-        "completions": "22",
-        "hits": 0
-    },
-    {
-        "input": "Molly Murphy ",
-        "completions": "795",
-        "hits": 0
-    },
-    {
-        "input": "Larry Hunt ",
-        "completions": "3",
-        "hits": 0
-    },
-    {
-        "input": "16 ",
-        "completions": "Angela Spears",
-        "hits": 0
+        "input": "William Schmidt ",
+        "completions": "786",
+        "hits": 1
     }
 ]

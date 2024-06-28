@@ -1,21 +1,21 @@
 - description: "Omnicomplete #1"
   vars:
-    input_value: 97
+    input_value: 648
     previous_completions: file://knowledge_bases/previous_completions.json
     domain_knowledge: file://knowledge_bases/domain_knowledge.json
 - description: "Omnicomplete #2 (hit count)"
   vars:
-    input_value: Keith
+    input_value: Todd Oneill
     previous_completions: file://knowledge_bases/previous_completions.json
     domain_knowledge: file://knowledge_bases/domain_knowledge.json
 - description: "Omnicomplete #3 (domain knowledge)"
   vars:
-    input_value: April White
+    input_value: April
     previous_completions: file://knowledge_bases/previous_completions.json
     domain_knowledge: file://knowledge_bases/domain_knowledge.json
 - description: "Omnicomplete #4 (domain knowledge)"
   vars:
-    input_value: 19
+    input_value: 195
     previous_completions: file://knowledge_bases/previous_completions.json
     domain_knowledge: file://knowledge_bases/domain_knowledge.json
 
